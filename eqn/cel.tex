@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[height=10cm,width=10cm]{geometry}
+
+\usepackage{amsmath}
+
+% \cancel
+\usepackage{cancel}
+
+% \mathbb{1} for identity matrix
+\usepackage{bbold}
+
+% \intercal
+\usepackage{amssymb}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{equation*}
+\mathrm{cel}(k_\mathrm{c}, p, a, b) =
+ \int_0^{\pi/2} \frac{a \cos^2{\varphi} + b \sin^2{\varphi}}
+                     {  \cos^2{\varphi} + p \sin^2{\varphi}}
+                \frac{\mathrm{d}\varphi}
+                     {\sqrt{\cos^2{\varphi} + k_\mathrm{c}^2 \sin^2{\varphi}}}
+\end{equation*}
+
+\end{document}
