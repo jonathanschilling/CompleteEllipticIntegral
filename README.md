@@ -6,7 +6,8 @@ These routines are based on a set of three articles named "Numerical calculation
  * https://doi.org/10.1007/BF02165405 (Part III, Numer. Math. 13, 305–315 (1969))
 
 The complete elliptic integral `cel(k_c, p, a, b)` is defined as follows:
-![asdf](eqn/cel.png)
+
+![complete elliptic integral](eqn/cel.png)
 
 ## Maven Central
 This code snippet is available on Maven Central at the following coordinates:
