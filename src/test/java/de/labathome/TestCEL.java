@@ -34,7 +34,7 @@ public class TestCEL {
 	}
 
 	/**
-	 * test case for cel() implementation as described in section 4.2 of the 1969 Burlisch article
+	 * test case for cel() implementation as described in section 4.2 of the 1969 Bulirsch article
 	 */
 	@Test
 	public void testCel() {

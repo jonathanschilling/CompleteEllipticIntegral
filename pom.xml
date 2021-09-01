@@ -1,13 +1,31 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>de.labathome</groupId>
-    <artifactId>de-labathome-parent</artifactId>
-    <version>1.0.0</version>
-  </parent>
-  <groupId>de.labathome</groupId>
-  <artifactId>cel</artifactId>
-  <version>1.0.0</version>
-  <name>cel</name>
-  <description>Complete Elliptic Integral introduced by Burlisch in 1969</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.labathome</groupId>
+		<artifactId>de-labathome-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<groupId>de.labathome</groupId>
+	<artifactId>cel</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>cel</name>
+	<description>Complete Elliptic Integral introduced by Bulirsch in 1969</description>
+
+	<url>${jonathanschilling.git.url}${project.name}</url>
+	<scm>
+		<connection>${jonathanschilling.git.root}${project.name}.git</connection>
+		<developerConnection>${jonathanschilling.git.root}${project.name}.git</developerConnection>
+		<url>${jonathanschilling.git.url}${project.name}/tree/master</url>
+	</scm>
+	<issueManagement>
+		<url>${jonathanschilling.git.url}${project.name}/issues</url>
+		<system>GitLab Issues</system>
+	</issueManagement>
+
 </project>
