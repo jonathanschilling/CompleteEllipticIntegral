@@ -7,7 +7,7 @@ This code snippet is available on Maven Central at the following coordinates:
 ```xml
 <dependency>
   <groupId>de.labathome</groupId>
-  <artifactId>cel</artifactId>
+  <artifactId>CompleteEllipticIntegral</artifactId>
   <version>1.0.0</version>
 </dependency>
 ```

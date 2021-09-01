@@ -10,11 +10,11 @@
 	</parent>
 
 	<groupId>de.labathome</groupId>
-	<artifactId>cel</artifactId>
+	<artifactId>CompleteEllipticIntegral</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>cel</name>
+	<name>CompleteEllipticIntegral</name>
 	<description>Complete Elliptic Integral introduced by Bulirsch in 1969</description>
 
 	<url>${jonathanschilling.git.url}${project.name}</url>
