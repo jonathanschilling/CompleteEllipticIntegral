@@ -33,8 +33,8 @@ public class CompleteEllipticIntegral {
 	public static double cel(double k_c, double p, double a, double b) {
 		if (k_c == 0.0) {
 			if (b != 0.0) {
-				// when k_c is zero and b != 0, cel is undefined
-				return Double.NaN;
+				// when k_c is zero and b != 0, cel diverges (?)
+				return Double.POSITIVE_INFINITY;
 			} else {
 				k_c = SQRT_EPS*SQRT_EPS;
 			}
@@ -85,4 +85,24 @@ public class CompleteEllipticIntegral {
 		return PI_2*(a*m+b)/(m*(m+p));
 	}
 
+	/**
+	 * Evaluate the complete elliptic integral of the first kind K(k)
+	 * using cel(k_c, 1, 1, 1) with k^2 + k_c^2 = 1.
+	 * @param k modulus
+	 * @return complete elliptic integral of the first kind
+	 */
+	public static double ellipticK(double k) {
+		return cel(Math.sqrt(1.0 - k*k), 1.0, 1.0, 1.0);
+	}
+
+	/**
+	 * Evaluate the complete elliptic integral of the second kind E(k)
+	 * using cel(k_c, 1, 1, k_c^2) with k^2 + k_c^2 = 1.
+	 * @param k modulus
+	 * @return complete elliptic integral of the first kind
+	 */
+	public static double ellipticE(double k) {
+		final double kcSq = 1.0 - k*k;
+		return cel(Math.sqrt(kcSq), 1, 1, kcSq);
+	}
 }
