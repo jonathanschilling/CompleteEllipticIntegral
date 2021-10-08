@@ -13,7 +13,7 @@ public class CompleteEllipticIntegral {
 	private static final double PI_2 = Math.PI/2.0;
 
 	/** sqrt of machine epsilon */
-	private static final double SQRT_EPS = Math.sqrt(Math.nextUp(1.0) - 1.0);
+	private static final double SQRT_EPS = Math.sqrt(Math.ulp(1.0));
 
 	/**
 	 * Compute the complete elliptic integral introduced in
