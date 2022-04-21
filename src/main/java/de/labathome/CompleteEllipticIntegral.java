@@ -46,14 +46,16 @@ public class CompleteEllipticIntegral {
 		double e = k_c; // \nu * \mu
 		// In the iterations, \nu_i is stored in k_c.
 
-		double f, q, g;
+		double f, g;
 
 		// initialization
 		if (p > 0.0) {
 			p = Math.sqrt(p);
 			b = b / p;
 		} else { // p <= 0
-			f = k_c*k_c;        // kc^2
+			double q;
+
+			f = k_c*k_c;        // f = kc^2 (re-used here; later f = a_i)
 			q = 1.0 - f;        // 1 - kc^2
 			g = 1.0 - p;
 			f -= p;             // kc^2 - p
