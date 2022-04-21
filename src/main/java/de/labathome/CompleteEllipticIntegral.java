@@ -53,7 +53,7 @@ public class CompleteEllipticIntegral {
 			p = Math.sqrt(p);
 			b = b / p;
 		} else { // p <= 0
-			f = k_c*k_c;
+			f = k_c*k_c;        // kc^2
 			q = 1.0 - f;        // 1 - kc^2
 			g = 1.0 - p;
 			f -= p;             // kc^2 - p
